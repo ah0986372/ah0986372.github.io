@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/*        Author:Akeem Hertenstein
+        Class: CIS 130 
+        Assignment: About a Company
+        */
+
+
+
+/*--body--*/
+
+body {
+    Margin: 0px;
+    background-color: rgba(0, 255, 251, 0.386);
+    background-image: linear-gradient(to top left, rgba(0, 255, 251, 0.386), rgba(255, 255, 240, 0.627) 40%), url(photos/websitebackground.jpg);
+    background-size: cover;
+    color: cornsilk;
+    text-align: center;
+
+}
+
+/*--nav--*/
+nav {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 0px 0px 50px 50px;
+    background: url(photos/blueseashell.jpg) no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+nav h1 {
+    color: cornsilk;
+    font-size: 3em;
+    background-color: rgba(0, 255, 251, 0.386);
+    border-radius: 5em;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-family: 'great vibes';
+}
+
+/*--links--*/
+a {
+    color: cornsilk;
+    background-color: rgba(112, 112, 64, 0.662);
+    font-size: x-large;
+    padding: 10px;
+
+}
+
+/*--body articles---*/
+
+article {
+    margin: 30px;
+    background-color: rgba(123, 101, 68, 0.525);
+    border-radius: 2em;
+    padding: 10px;
+    font-size: x-large;
+
+
+}
+
+article h2 {
+    font-family: 'great vibes';
+    font-size: 3em;
+}
+
+/*--aboutme---*/
+
+.aboutme1 {
+    border-radius: 50%;
+
+}
+
+
+/*--products--*/
+
+.container,
+.container2,
+.container3 {
+    max-width: 90%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.blueheartleft {
+    background: url(photos/blueheart.jpg) no-repeat center / cover;
+}
+
+.blueheartleft,
+.seashellleft {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    margin: -2%;
+}
+
+.featherleft {
+    width: 80%;
+    min-height: 150px;
+    background-color: rgba(0, 255, 251, 0.386);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: -2%;
+
+
+}
+
+.blueheartright,
+.seashellright {
+    width: 80%;
+    min-height: 150px;
+    background-color: rgba(0, 255, 251, 0.386);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+
+
+.featherright {
+
+    width: 100%;
+    height: 400px;
+    background: url(photos/feather.jpg) no-repeat center / cover;
+    border-radius: 8px;
+
+}
+
+.seashellleft {
+    background: url(photos/blueseashell.jpg) no-repeat center / cover;
+
+}
+
+p strong {
+    color: rgb(182, 65, 23);
+}
+
+
+
+/*--footer--*/
+footer {
+    background-color: rgba(123, 101, 68, 0.525);
+    padding: .5em;
+}
+
+footer a {
+    background-color: transparent;
+}

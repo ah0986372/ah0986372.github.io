@@ -1,3 +1,42 @@
 body{
     background: #2e2b2b;
 }
+header{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    height: 500px;
+background: url(Images/Resized_20230415_071036_02.jpg), lightgray -1px -111.18px / 100% 212.496% no-repeat;
+
+
+}
+blockquote{
+    width: 613px;
+height: 97px;
+/* type */
+color: #FFF;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+/* robert */
+color: #FFF;
+font-family: Inter;
+font-size: 24px;
+font-style: italic;
+font-weight: 100;
+line-height: normal;
+}
+.maingrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: sidebar maincontent;
+    gap:20px;
+}
+.maingrid{
+    grid-area: maincontent;
+}
+.sidebar{
+    grid-area: sidebar;
+}
