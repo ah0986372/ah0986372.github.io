@@ -1,42 +1,180 @@
-body{
-    background: #2e2b2b;
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lora:wght@400;700&display=swap');
+
+* { margin: 0%;
+    box-sizing: border-box;
 }
-header{
+:root {
+   
+    --standard: 20px;
+    --sidemar: 5% 20% 5% 20%;
+    --accent:rgb(48, 54, 59);
+    --light: white;
+    --a1:#c28a66;
+    --a2:#43b6dd;
+    --a3:#919d44;
+    --a5:#3a6370;
+    --a6:#283867;
+    --font1:"homemade apple";
+    --font2: "lora";
+    --bordrad:20px 20px 20px 20px;
+}
+
+
+@keyframes ani-frost {
+    0% {left: -2000px;}
+}
+
+body {
+    
+    background: #2e2b2b;
+    color: var(--light);
+    text-align: center;
+}
+
+.head-img {
     position: relative;
-    display: block;
     box-sizing: border-box;
     height: 500px;
-background: url(Images/Resized_20230415_071036_02.jpg), lightgray -1px -111.18px / 100% 212.496% no-repeat;
-
-
+    background: url(Images/Resized_20230415_071036_02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 25%;
+    z-index: 1;
+    filter: blur(2px);
 }
-blockquote{
-    width: 613px;
-height: 97px;
-/* type */
-color: #FFF;
-font-family: Inter;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-/* robert */
-color: #FFF;
-font-family: Inter;
-font-size: 24px;
-font-style: italic;
-font-weight: 100;
-line-height: normal;
+
+.head-txt {
+    z-index: 2;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    animation-name: ani-frost;
+    animation-duration: 3s;
+    
 }
-.maingrid{
+
+blockquote {
+    text-align: justify;
+    font-family: var(--font2);
+    font-size: 36px;
+    text-transform: capitalize;
+    margin-right: 5%;
+}
+cite {
+    position: relative;
+    left: 70%;
+    font-family:var(--font1)
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas:
+    "tl mc"
+    "sd2 mc"
+    "sd2 mc";
+    gap: 20px;
+}
+.nav{
+    background: var(--accent);
+    grid-area: tl;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-area: sidebar maincontent;
-    gap:20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "tp tp"
+    "m1 m2"
+    "b1 b2";
+    gap: 15px;
+    margin-top: 15px;
+
 }
-.maingrid{
-    grid-area: maincontent;
+.nav :nth-child(1){
+    grid-area: tp;
 }
-.sidebar{
-    grid-area: sidebar;
+.nav>a{
+    color: var(--light);
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+
 }
+.nav2{
+    background: var(--accent);
+    grid-area:sd2;
+}
+.nav2links>a{
+display: block;
+width:auto;
+background-color: rgb(127, 255, 212);
+width: 60%;
+margin: auto;
+margin-top: 25px;
+
+
+}
+.navhr{
+    width: 80%;
+    margin: auto;
+}
+.maincontent{
+    grid-area: mc;
+    padding: 5%;
+}
+.maincontent>section>p,li{
+    font-size: 1.3rem;
+    font-family: var(--font2);  
+}
+.maincontent>section>h1,h2{
+    font-family: var(--font1);
+    text-transform: capitalize;
+    letter-spacing: .3rem;
+}
+.whome>h1{
+    color: var(--a3);
+}
+.bodyhr{
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+table{
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 100px;
+    border-collapse: separate;
+    border-spacing: 10px;
+    
+    
+}
+th{
+    background-color: var(--a2);
+    height: 50px;
+    border-radius: var(--bordrad);
+    
+}
+td{
+    background-color: var(--a3);
+    height: 100px;
+    border-radius: var(--bordrad);
+}
+.tdfinal{
+    height: 50px;
+    border-radius: var(--bordrad);
+}
+
+.skilllist{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+}
+.skills>h2{
+    color: var(--a1);
+}
+
+
+
