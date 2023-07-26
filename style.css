@@ -148,13 +148,15 @@ table{
     height: 100px;
     border-collapse: separate;
     border-spacing: 10px;
-    
-    
+    caption-side: bottom;  
+}
+caption{
+    margin-left: 80%;
 }
 th{
     background-color: var(--a2);
     height: 50px;
-    border-radius: var(--bordrad);
+    
     
 }
 td{
@@ -164,7 +166,8 @@ td{
 }
 .tdfinal{
     height: 50px;
-    border-radius: var(--bordrad);
+    background-color: var(--a5);
+    font-size: 2rem;
 }
 
 .skilllist{
