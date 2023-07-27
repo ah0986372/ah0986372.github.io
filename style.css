@@ -88,8 +88,6 @@ cite {
         "leftmid rightmid"
         "leftmid rightlower"
 
-
-
 }
 
 .headnav {
@@ -287,16 +285,16 @@ footer {
 
 
 
-@media (max-width:750px) {
+@media screen and (max-width:750px) {
 
     .head-txt {
         position: absolute;
-        top: 10%;
+        top:10%;
         left: 0%;
     }
 
     blockquote {
-        margin-right: 20;
+        margin-right: 20%;
         font-size: 1.5rem;
         padding: 5%;
     }
