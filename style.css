@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Lora:wght@400;700&display=swap');
 
 * {
@@ -21,8 +20,8 @@
     --font1: "homemade apple";
     --font2: "lora";
     --bordrad: 20px 20px 20px 20px;
-    --test:lime;
-    --purp:#800080;
+    --test: lime;
+    --purp: #800080;
 }
 
 
@@ -38,10 +37,12 @@ body {
     color: var(--light);
     text-align: center;
 }
-h1,h2{
+
+h1,
+h2 {
     font-size: 2rem;
     font-family: var(--font1);
-    
+
 }
 
 /* heading */
@@ -78,18 +79,19 @@ cite {
     font-family: var(--font1)
 }
 
-.griddy{
+.griddy {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 20% 1fr 1fr ;
-    grid-template-areas: 
-    "lefttop righttop"
-    "leftmid rightmid"
-    "leftmid rightlower"
+    grid-template-rows: 20% 1fr 1fr;
+    grid-template-areas:
+        "lefttop righttop"
+        "leftmid rightmid"
+        "leftmid rightlower"
 
 
 
 }
+
 .headnav {
     position: relative;
     display: grid;
@@ -100,38 +102,44 @@ cite {
         "sd2 mc"
         "sd2 mc2";
     gap: 20px;
-    height:100%;
+    height: 100%;
     background: var(--accent);
-} 
-.headnav>a{
+}
+
+.headnav>a {
     font-size: 2rem;
     margin: auto;
-    
+
 }
+
 .headnav :nth-child(1) {
     grid-area: tl;
     margin-top: 15%;
 }
-.wrapper2{
+
+.wrapper2 {
     grid-area: leftmid;
     background: var(--accent);
     height: 100%;
 
 }
-.introcard{
+
+.introcard {
     background: var(--accent);
 }
-.introcard>h2{
+
+.introcard>h2 {
     width: 100%;
     text-align: center;
     margin-top: 10%;
 }
+
 .navhr {
     width: 80%;
     margin: auto;
 }
 
-.contactnav>a{
+.contactnav>a {
     display: block;
     width: 100%;
     margin-top: 50%;
@@ -139,21 +147,23 @@ cite {
 }
 
 
-.whome{
+.whome {
     grid-area: rightop;
     font-family: var(--font2);
     padding: 5%;
     font-size: 1.3rem;
 }
+
 .whome>h1 {
     color: var(--a3);
     font-family: var(--font1);
 }
-strong{
+
+strong {
     color: var(--a1);
 }
 
-.school{
+.school {
     grid-area: rightmid;
     width: 80%;
     position: relative;
@@ -162,7 +172,8 @@ strong{
 
     height: 80%;
 }
-.wrapper3{
+
+.wrapper3 {
     grid-area: rightlower;
 }
 
@@ -180,12 +191,14 @@ strong{
     padding: 5%;
 
 }
+
 .school>h2 {
     color: #800080;
 
 }
+
 table {
-    margin:auto;
+    margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
     width: 100%;
@@ -194,6 +207,7 @@ table {
     border-spacing: 10px;
     caption-side: bottom;
 }
+
 caption {
     margin-left: 80%;
 }
@@ -227,27 +241,21 @@ td {
 .skilllist {
     display: flex;
     flex-flow: column;
-        list-style-type: none;
-        font-size: 1.5rem;
-    }
+    list-style-type: none;
+    font-size: 1.5rem;
+}
 
-    .skills>h2 {
-        color: var(--a1);
-    }
-
-
-.wrapper3{
-    grid-area: rightlower;
-height: 100%;
-    background-color: var(--accent);
-    display: grid;
+.skills>h2 {
+    color: var(--a1);
 }
 
 
-
-
-
-
+.wrapper3 {
+    grid-area: rightlower;
+    height: 100%;
+    background-color: var(--accent);
+    display: grid;
+}
 
 
 .button {
@@ -261,14 +269,17 @@ height: 100%;
     border-radius: var(--bordrad);
 
 }
-form{
+
+form {
     margin: 10%;
 }
-button:hover{
+
+button:hover {
     background-color: var(--a5);
 
 }
-footer{
+
+footer {
     position: sticky;
     bottom: 0%;
     width: 100%;
@@ -277,46 +288,49 @@ footer{
 
 
 @media (max-width:750px) {
-    body{
-        background-color: #800080;
-    }
-    .head-txt{
+
+    .head-txt {
         position: absolute;
-        top:10%;
+        top: 10%;
         left: 0%;
     }
-    blockquote{
+
+    blockquote {
         margin-right: 20;
         font-size: 1.5rem;
         padding: 5%;
     }
-    .wrapper{
-        display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10%;
-    grid-template-areas: 
-    "tl" 
-    "mc"
-    "mc"
-    "mc"
-    "sd2";
-    gap: 3px;
-    }
-    
-.nav:not(.nav1){
-    display:none;
-}
-    .nav :nth-child(1) {
-        margin-top: 0;}
 
-    .nav>a{
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10%;
+        grid-template-areas:
+            "tl"
+            "mc"
+            "mc"
+            "mc"
+            "sd2";
+        gap: 3px;
+    }
+
+    .nav:not(.nav1) {
+        display: none;
+    }
+
+    .nav :nth-child(1) {
+        margin-top: 0;
+    }
+
+    .nav>a {
         font-size: 1.5rem;
         width: 0;
-        height: 0;}
-
-        .school>.nav {
-            display: grid;
-            grid-template-rows: 1fr;
-        }
-
+        height: 0;
     }
+
+    .school>.nav {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+}
