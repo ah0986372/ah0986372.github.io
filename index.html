@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c39febbd7e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>AH | Resume</title>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <div class="head-img"></div>
 
@@ -18,49 +20,74 @@
         </div>
     </header>
 
-    <div class="wrapper">
-        
-        <div class="nav">
-            <a href="#" class="navtab tab0">
-                Home
-            </a>
-            <a href="#" class="navtab tab1">
-                Home
-            </a>
-            <a href="#" class="navtab tab2">
-                link 2
-            </a>
-            <a href="#" class="navtab tab3">
-                link 3
-            </a>
-            <a href="#" class="navtab tab4">link 4
-            </a>
-        </div>
 
+    <!-- Page consistant Nav -->
 
-        <div class="nav2">
-            <p>Akeem Hertenstein</p>
-            <hr class="navhr">
-
-            <div class="nav2links">
-                <!-- Phone Icon -->
-                <a href="tel:602-492-8002">Call Me</a>
-                <a href="mailto:KingHertenstein@gmail.com">E-mail Me</a>
-                <a href="contactme.html">Hire Me</a>
+    <div class="griddy">
+        <div class="wrapper">
+            <div class="headnav">
+                <a href="index.html" ><i class="fa-solid fa-house fa-2xl" style="color: #c28a66;"></i>
+                </a>
+                <a href="Projects/About-a-Company/index.html" target="_blank">
+                    <i class="fa-regular fa-building fa-2xl" style="color: #800080;"></i>
+                </a>
+                <a href="Projects/JS/index.html" target="_blank"><i class="fa-brands fa-js fa-2xl" style="color: #43b6dd;"></i>
+                </a>
+                <a href="Projects/Live-Bait/index.html" target="_blank"><i class="fa-solid fa-fish-fins fa-2xl"
+                        style="color: #3a6370;"></i>
+                </a>
+                <a href="Projects/B&B/index.html" target="_blank"><i class="fa-solid fa-bed fa-2xl" style="color: #919d44;"></i>
+                </a>
             </div>
         </div>
-        <div class="maincontent">
-            <section class="whome">
+        <!-- Consistant Page Nav Lower -->
+        <div class="wrapper2">
+            <div class="introcard">
+                <h2>Akeem Hertenstein</h2>
+                <hr class="navhr">
+            </div>
+            <div class="contactnav">
+                <!-- Phone Icon -->
+                <a href="tel:602-492-8002"><i class="fa-solid fa-mobile fa-shake fa-2xl"
+                        style="color: #919d44;"></i></a>
+                <a href="mailto:KingHertenstein@gmail.com"><i class="fa-solid fa-paper-plane fa-2xl"></i></a>
+                <a href="https://www.linkedin.com/in/akeem-hertenstein-6b3464278" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl" ></i></a>
+
+                <form method="post" action="thankyou.html">
+                    <label for="fname" >First name:</label>
+                    <input type="text" id="fname" name="first-name">
+                    <label for="cname">Company Name:</label>
+                    <input type="text" id="cname" name="Comp-Name">
+                    <label for="tel">Telephone Number and Ext</label>
+                    <input type="tel" name="Tele" id="tel">
+                </form>
+
+                <button class="button"><a href="contactme.html">Hire Me</a></button>
+            </div>
+        </div>
+        <!-- Main content  -->
+        <div class="intro">
+            <div class="whome">
                 <h1>who i am</h1>
-                <p> Called by the name Akeem, I am a newcomer in the feild of Information Technology. Alwas seeking to learn more about the tech that we have used over the years. I have taken apart and repaired my fair share of PC's, Game Consoles, Phones and Stereos from the age of 10. (Yes there was some parental disapprovment) - I now seek to finally jump in to the deep end and see where this would can take me. 
+                <p> Called by the name <strong>Akeem</strong>, I am a newcomer in the feild of Information Technology. Alwas seeking to
+                    learn more about the tech that we have used over the years. I have taken apart and repaired my fair
+                    share of PC's, Game Consoles, Phones and Stereos from the age of 10. (Yes there was some parental
+                    disapprovment) - I now seek to finally jump in to the deep end and see where this would can take me.
                 </p>
                 <hr class="bodyhr">
-                <p>Interested in seeing just where the path less traveled can take you, but still cautious. Lets see how my Education and Skills fit.</p>
-            </section>
-            <section class="school">
-                <h2>Education</h2>
-                <p> Currently in College, this summer has been jam-packed with skills that I have learned!</p>
-                
+                <p>Interested in seeing just where the path less traveled can take you, but still cautious. Lets see how
+                    my Education and Skills fit your needs.</p>
+            </div>
+        </div>
+        <!-- School -->
+        <div class="school">
+            <h2>Education</h2>
+            <div class="schoolintro">
+                <p> Currently in College, to get my Bacholers in Computer Science. This summer has been jam-packed with
+                    skills that I have learned!</p>
+            </div>
+            <!-- Table -->
+            <div class="schooltable">
                 <table>
                     <caption>* Waiting for Final Score</caption>
                     <tr>
@@ -76,9 +103,29 @@
                         <td colspan="4" class="tdfinal">Final Grade : 100%</td>
                     </tr>
                 </table>
-            </section>
-            <section class="skills">
-                <h2>skills</h2>
+            </div>
+        </div>
+        <hr class="body">
+        <div class="wrapper3">
+            <div class="projectintro">
+                <h2>Projects that have been crafted by me</h2>
+            </div>
+            <div class="bodynav">
+                <a href="Projects/About-a-Company/index.html" target="_blank">
+                    <i class="fa-regular fa-building fa-2xl" style="color: #800080;"></i>&nbsp;About a Company
+                </a>
+                <a href="Projects/JS/index.html" target="_blank""><i class="fa-brands fa-js fa-2xl"
+                        style="color: #43b6dd;"></i>
+                    Java Demo</a>
+                <a href="Projects/Live-Bait/index.html" target="_blank"><i class="fa-solid fa-fish-fins fa-2xl"
+                        style="color: #3a6370;"></i>
+                    Live Bait Store</a>
+                <a href="Projects/B&B/index.html" target="_blank"></a><i class="fa-solid fa-bed fa-2xl"
+                        style="color: #919d44;"></i>
+                    Bed & Breakfast</a>
+            </div>
+            <div class="skills">
+                <h2>professional</h2>
                 <ul class="skilllist">
                     <li>Complaint Investigations</li>
                     <li>Project Management</li>
@@ -89,20 +136,19 @@
                     <li>Installation</li>
                     <li>Microsoft Tools</li>
                 </ul>
-            </section>
-
-            <section class="work">
-                <h2>Work</h2>
-            </section>
+                <h2>skills</h2>
+            </div>
         </div>
+    
+    
+    </div>
+    </div>
     </div>
 
 
-    </div>
     <footer>
         Akeem Hertenstein &copy; 2023
     </footer>
-<script></script>
 </body>
 
 </html>
